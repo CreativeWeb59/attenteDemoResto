@@ -1,0 +1,159 @@
+:root {
+  --main-bg-color: #fff;
+  --second-color: #333333;
+  --third-color: #d49625;
+  --border-color: #df4937;
+  --text-color: #666666;
+  font-size: 1.4rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--main-bg-color);
+  color:var(--third-color);
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.ecran {
+  width: 100%;
+  height: calc(100vh - 80px);          /* vh -80px; */
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+h1 {
+  color:var(--second-color);
+}
+
+h2 {
+  color:var(--second-color);
+}
+
+img {
+  width: 10%;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+p {
+  color:var(--text-color);
+  margin-top: 40px;
+}
+
+/* Les boutons */
+.btn {
+  background: var(--second-color);
+  color:var(--third-color);
+  width: 300px;
+  height: 60px;
+  font-size: 2rem;
+  border-radius:20px 20px 20px 20px;
+  cursor: pointer;
+  border:none;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn.btn-background-circle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: var(--second-color);
+  border-color: white;
+  border-radius:40%;
+  transition: transform 500ms ease-in-out;
+
+  transform: scale(1.5);
+}
+
+.btn.btn-background-circle:hover::before,
+.btn.btn-background-circle:focus::before {
+  transform: scale(0);
+}
+
+.btn.btn-background-circle {
+  z-index: 1;
+  overflow: hidden;
+  background-color: var(--third-color);
+  transition: color 500ms ease-in-out;
+}
+
+.btn.btn-background-circle:hover,
+.btn.btn-background-circle:focus {
+  color: white;
+}
+
+
+.btn.btn-background-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: var(--third-color);
+  border-radius:20px 20px 20px 20px;
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.btn.btn-background-slide:hover::before,
+.btn.btn-background-slide:focus::before {
+  transform: scaleX(1);
+}
+
+.btn.btn-background-slide {
+  transition: color 300ms ease-in-out;
+  z-index: 1;
+}
+
+
+.btn.btn-background-slide:hover,
+.btn.btn-background-slide:focus {
+  color: white;
+}
+
+/* Style pour les liens boutons */
+.lien-general {
+  width: 100%;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+@media screen and (max-width: 960px) {
+
+  h1{
+      font-size: 1.2rem;
+  }
+  h2{
+    font-size: 1.2rem;
+  }
+  .ecran{
+    height: 100%;
+  }
+}

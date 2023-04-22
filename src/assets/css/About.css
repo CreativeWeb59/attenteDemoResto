@@ -1,0 +1,84 @@
+.contain-presentation {
+    width: 70%;
+    height:850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 50px 0;
+    color: var(--text-color);
+}
+
+.cadre-about-image {
+    width:40%;
+    height: 360px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+    /*w-1/2 h-4/6 flex m-16*/
+  }
+
+  .cadre-texte {
+    padding-right: 40px;
+    text-align: justify;
+    margin: 10px;
+  }
+
+  .middle {
+    width:40%;
+    height: 400px;
+  }
+
+.full{
+    width:80%;
+    height: 200px;
+}
+
+
+.center{
+    text-align: center;
+}
+
+  .cadre-texte p{
+    font-size: 0.8rem;
+  }
+
+.cadre-texte .btn{
+      width: 200px;
+      height: 40px;
+      margin-top: 10px;
+      font-size: 1rem;
+}
+
+.svg-about{
+    font-size: 0.5rem;
+    width: 10px;
+    height: 10px;
+
+}
+
+.contain-diap{
+  width: 80%;
+  height: 100%;
+  margin-bottom: 100px;
+}
+
+.page h1{
+  margin: 50px;
+  text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+
+  .contain-presentation{
+    width: 100%;
+  }
+  .middle{
+    width: 100%;
+  }
+  .cadre-about-image{
+    width: 100%;
+  }
+}

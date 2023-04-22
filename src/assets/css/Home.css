@@ -1,0 +1,207 @@
+  .ecran1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.ecran2 {
+    justify-content: center;
+    flex-direction: row;
+}
+
+.ecran3 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.ecran4 {
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ecran4 h2{
+    color: #fff;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+.sectionE4 {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+#texte1 {
+    font-size: 7rem;
+    color:white;
+    text-shadow: 4px 4px 2px #d49625;
+    width:100%;
+}
+
+#texte2 {
+    font-size: 5rem;
+    color:white;
+    background: palevioletred;
+}
+
+
+.sectionF {
+    width:100%;
+    height:50%;
+    text-align: center;
+}
+
+.articleC {
+    width: 100%;
+    height:60%;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.sectionG {
+    background: cornflowerblue;
+    width:25%;
+    height:40%;
+    margin: 30px;
+    padding: 10px;
+}
+
+.sectionD {
+    background: crimson;
+    width:25%;
+    height:40%;
+    margin: 30px;
+    padding: 10px;
+}
+
+.cadrePhoto {
+    background: cornflowerblue;
+    width:30%;
+    height:30%;
+    border:10px solid #ededed;
+}
+
+.photo {
+    width:100%;
+    height: auto;
+}
+
+.cadre {
+    background: #ededed;
+    width:25%;
+    height:70%;
+    margin: 100px;
+    padding: 10px;
+    border: 1px solid #333333;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    /*clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    https://bennettfeely.com/clippy/ */
+    opacity: 0.6;
+}
+.cadre .btn{
+    width: 100%;
+    font-size: 1.4rem;
+}
+.lien-general img{
+    width: 50%;
+    height: auto;
+    transition: 0.3 ease;
+}
+
+.lien-general img:hover{
+    transform: scale(1.4);
+}
+
+.cadre:hover {
+    opacity: 1;
+    /*border:none;*/
+}
+.ecran4 h1{
+    width: 100%;
+    text-align: center;
+}
+
+.lien-general{
+    text-align: center;
+}
+
+.lien-general h3{
+    text-align: center;
+    text-decoration: none;
+    color:var(--third-color);
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 2rem;
+}
+
+
+
+@media screen and (max-width: 960px) {
+    #texte1 {
+        font-size: 4rem;
+        color:white;
+        text-shadow: 2px 2px 1px #d49625;
+        width:100%;
+    }
+    .ecran1 {
+        height: calc(100vh - 80px);          /* vh -80px; */
+    }
+    .ecran2 {
+        height: 100%;
+    }
+    .ecran3 {
+        height: 100%;
+        padding: 0;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .articleC{
+        padding: 10px;
+    }
+    .sectionF{
+        margin-bottom: 30px;
+    }
+    .cadrePhoto{
+        width:80%;
+        border: none;
+        height: 200px;
+        margin: 10px 0;
+    }
+    .ecran4{
+        width: 100%;
+        padding: 0;
+        padding-top: 30px;
+    }
+    .ecran4 h2{
+        margin: 0;
+        padding: 0;
+    }
+    .sectionE4{
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .sectionE4 .cadre{
+        width: 100%;
+        margin: 10px;
+        opacity: 1;
+    }
+}
